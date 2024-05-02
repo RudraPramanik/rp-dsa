@@ -12,14 +12,14 @@ function countDigits(n) {
         count = count + 1;
         // Divide 'n' by 10 to
         // remove the last digit.
-        n = Math.floor(n / 10);
+        n = Math.floor(n/10);
     }
     // Return the
     // count of digits.
-    return cnt;
+    return count;
 }
 
-console.log(countDigits(2343353))
+console.log(countDigits())
 
 function main(){
     let N = 344535;
