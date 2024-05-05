@@ -19,12 +19,12 @@ function countDigits(n) {
     return count;
 }
 
-console.log(countDigits())
+console.log(countDigits(759395))
 
-function main(){
-    let N = 344535;
-    console.log("N"+ N);
-    let digits = countDigits(N)
-    console.log("number of digits " + digits)
-}
-main()
+// function main(){
+//     let N = 344535;
+//     console.log("N"+ N);
+//     let digits = countDigits(N)
+//     console.log("number of digits " + digits)
+// }
+// main()
