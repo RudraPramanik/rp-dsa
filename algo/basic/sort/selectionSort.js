@@ -26,3 +26,4 @@ function selectionSort(array) {
 const unsortedArray = [29, 10, 14, 37, 13];
 const sortedArray = selectionSort(unsortedArray);
 console.log(sortedArray);  // Output: [10, 13, 14, 29, 37]
+ 
