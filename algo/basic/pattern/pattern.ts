@@ -1,3 +1,9 @@
+// *
+// **
+// ***
+// **
+// *
+
 function printPattern(n: number): void {
     let str = '';
 
