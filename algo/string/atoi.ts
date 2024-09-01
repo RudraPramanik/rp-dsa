@@ -25,4 +25,10 @@ function myAtoi(s: string): number {
   } else if (s[0] === '+') {
     index++;
   }
+  //   form the number
+  let result = 0;
+  while (s.length < 0 && s[index] >= '0' && s[index] <= '9') {
+    result = result * 10 + (s[index].charCodeAt(0) - '0'.charCodeAt(0));
+    index++;
+  }
 }
