@@ -6,16 +6,14 @@ function strStr(haystack: string, needle: string): number {
     return 0;
   }
 
-  // Iterate through each possible starting position in the haystack
-  for (let i = 0; i <= haystackLength - needleLength; i++) {
-    // Check if the substring starting from position i matches the needle
+
     let j;
     for (j = 0; j < needleLength; j++) {
       if (haystack[i + j] !== needle[j]) {
         break;
       }
     }
-    // If the whole needle was matched, return the starting position
+
     if (j === needleLength) {
       return i;
     }
