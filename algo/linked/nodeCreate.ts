@@ -38,4 +38,14 @@ class list<T> {
     }
     return currentNode;
   }
+
+  //method to remove a node with specific element
+  remove(element: T): void {
+    const prevNode = this.findPrevious(element);
+    if (prevNode.next !== null) {
+      prevNode.next = prevNode.next.next;
+    } else {
+      console.log(`element is not found`);
+    }
+  }
 }
