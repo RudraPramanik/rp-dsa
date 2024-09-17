@@ -15,10 +15,21 @@ class list<T> {
   //find a node
 
   find(element: T): node<T> | null {
-    let currentNode = this.head;
-    while (currentNode !== currentNode.next && currentNode.element == element) {
-      currentNode = currentNode.next!;
+    let currentElement = this.head;
+    while (currentElement !== null && currentElement.element !== element) {
+      currentElement = currentElement.next!;
     }
-    return currentNode;
+    return currentElement;
+  }
+  //method to insert new node
+  insert(newElement: T, afterElement: T): void {
+    const newNode = new node(newElement);
+    const current = new node(afterElement);
+    if (current) {
+      newNode.next = current.next;
+      current.next = newNode;
+    } else {
+      console.log(`not found`);
+    }
   }
 }
