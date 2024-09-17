@@ -24,12 +24,10 @@ class list<T> {
   //method to insert new node
   insert(newElement: T, afterElement: T): void {
     const newNode = new node(newElement);
-    const current = new node(afterElement);
+    const current = this.find(afterElement);
     if (current) {
       newNode.next = current.next;
       current.next = newNode;
-    } else {
-      console.log(`not found`);
     }
   }
 }
