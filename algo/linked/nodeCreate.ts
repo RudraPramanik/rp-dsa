@@ -48,4 +48,12 @@ class list<T> {
       console.log(`element is not found`);
     }
   }
+  //Method to display all
+  display(): void {
+    let currentNode = this.head.next;
+    while (currentNode !== null) {
+      console.log(currentNode.element);
+      currentNode = currentNode.next;
+    }
+  }
 }
