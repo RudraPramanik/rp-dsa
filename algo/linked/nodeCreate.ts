@@ -7,15 +7,17 @@ class node<T> {
   }
 }
 
-class list {
+class list<T> {
+  head: node<T>;
   constructor() {
-    this.head = new node('head'); //initialize with head node
+    this.head = new node<T>('head' as unknown as T); //initialize with head node
   }
   //find a node
-  find(element) {
+
+  find(element: T): node<T> | null {
     let currentNode = this.head;
-    while (currentNode !== null && currentNode.element !== element) {
-      currentNode = currentNode.next;
+    while (currentNode !== currentNode.next && currentNode.element == element) {
+      currentNode = currentNode.next!;
     }
     return currentNode;
   }
