@@ -28,6 +28,14 @@ class list<T> {
     if (current) {
       newNode.next = current.next;
       current.next = newNode;
+    } else console.log('node note found');
+  }
+  //Method to find the previous node
+  findPrevious(element: T): node<T> {
+    let currentNode = this.head;
+    while (currentNode.next !== null && currentNode.next.element !== element) {
+      currentNode = currentNode.next;
     }
+    return currentNode;
   }
 }
