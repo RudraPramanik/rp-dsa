@@ -6,13 +6,14 @@ function strStr(haystack: string, needle: string): number {
     return 0;
   }
 
-  for (let i = 0; i <= haystackLength - needleLength; i++) {
+
     let j;
     for (j = 0; j < needleLength; j++) {
       if (haystack[i + j] !== needle[j]) {
         break;
       }
     }
+
     if (j === needleLength) {
       return i;
     }
