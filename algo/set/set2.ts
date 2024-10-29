@@ -9,3 +9,11 @@ console.log(intersection); // Set { 3 }
 
 const difference = new Set([...setA].filter((x) => !setB.has(x)));
 console.log(difference); // Set { 1, 2 }
+
+for (const value of set) {
+  console.log(value); // logs each value in the set
+}
+
+set.forEach((value) => {
+  console.log(value); // same as above, logs each value in the set
+});
