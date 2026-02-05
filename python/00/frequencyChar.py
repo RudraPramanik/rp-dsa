@@ -1,4 +1,16 @@
 class Solution:
+    def uniqueChars(self, s):
+        freq = {}
+        for char in s:
+            freq[char] = freq.get(char,0)+1
+
+        result = []
+        for char in s:
+            if freq[char] == 1:
+                result.append(char)
+                
+        return result
+
     def firstUniqChar(self, s):
         freq = {}
 
@@ -14,4 +26,4 @@ class Solution:
 solution = Solution()
 print(solution.firstUniqChar("leetcode"))
 print(solution.firstUniqChar("loveleetcode"))
-print(solution.firstUniqChar("aabb"))
+print(solution.uniqueChars("rudra"))
