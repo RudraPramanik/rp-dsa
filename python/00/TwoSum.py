@@ -13,7 +13,17 @@ class Solution:
             # We haven't found a match yet, so save this number's index
             mp[n] = i
 
-# --- How to run it ---
-sol = Solution() # Create the 'Matchmaker' object
-result = sol.twoSums([3, 4, 5, 8, 9], 7) # Pass the list and the target
+
+sol = Solution() 
+result = sol.twoSums([2, 7, 11, 15], 9) 
 print(result) # Output: [0, 1
+
+# hashmap pattern
+# inside the for loop, find differenc,
+# if difference exist in map(dict) return mp[diff],i => [mp[2],1] => [0,1] => value[2,7]
+# [mp[2], 1]  => [0, 1]
+
+
+# need = target - current
+# if need exists → answer
+# else store current

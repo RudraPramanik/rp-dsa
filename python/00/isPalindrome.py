@@ -14,3 +14,10 @@ def isPalindrome(s):
     return True
 
 print(isPalindrome("dbab"))
+# two pointer pattern(left, right)
+# while loop as long left left smaller
+# nested while(edge case should not be number:isalnum()),
+# left increase/ right decrease(if the condition satisfy)
+# inside while looping (if input[left] !== input[right]) =>false
+# inside main while loop- left increase, right decrease
+# otherwise return true

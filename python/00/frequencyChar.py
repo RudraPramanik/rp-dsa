@@ -1,23 +1,15 @@
 class Solution:
-    def uniqueChars(self, s):
-        freq = {}
-        for char in s:
-            freq[char] = freq.get(char,0)+1
+   
 
-        result = []
-        for char in s:
-            if freq[char] == 1:
-                result.append(char)
-                
-        return result
-
-    def firstUniqChar(self, s):
+    def firstUniqChar(self, string):
         freq = {}
 
-        for char in s:
+         # Step 1: Count frequency
+        for char in string:
             freq[char] = freq.get(char, 0) + 1
 
-        for i, char in enumerate(s):
+          # Step 2: Find first unique
+        for i, char in enumerate(string):
             if freq[char] == 1:
                 return i
 
@@ -27,3 +19,7 @@ solution = Solution()
 print(solution.firstUniqChar("leetcode"))
 print(solution.firstUniqChar("loveleetcode"))
 print(solution.uniqueChars("rudra"))
+
+#Frequency Map + Second Pass
+# One loop to count, One loop to find
+# if none found -1
