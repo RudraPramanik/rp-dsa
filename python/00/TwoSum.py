@@ -1,6 +1,7 @@
 class Solution:
+      
     def twoSum(self, nums, target):
-        mp = {} # Our Memory Bank
+        mp = {} # Our Memory Bank dict(hash map)
 
         for i, n in enumerate(nums):
             diff = target - n # What are we looking for?
@@ -14,5 +15,5 @@ class Solution:
 
 # --- How to run it ---
 sol = Solution() # Create the 'Matchmaker' object
-result = sol.twoSum([3, 4, 5, 8, 9], 7) # Pass the list and the target
-print(result) # Output: [0, 1]
+result = sol.twoSums([3, 4, 5, 8, 9], 7) # Pass the list and the target
+print(result) # Output: [0, 1
