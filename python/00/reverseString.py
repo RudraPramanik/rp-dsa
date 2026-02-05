@@ -19,5 +19,5 @@ def reverseString2(s):
         right -=1
 
         return "".join(arr)
-
+ 
 print(reverseString2("hello"))
