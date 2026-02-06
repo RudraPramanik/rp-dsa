@@ -7,3 +7,4 @@ class Solution:
                 num //= 10
             num = total
         return num
+
