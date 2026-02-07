@@ -9,7 +9,7 @@ class Solution:
 
         for char in data:
             if char in mapping:
-                if not stack or stack.pop() != mapping[char]:
+                if not stack or stack.pop != mapping[char]:
                     return False
             else:
                 stack.append(char)
