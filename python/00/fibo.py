@@ -18,6 +18,6 @@ solution = Solution()
 print(solution.fibo(8))
 
 
-# dp
+# dynamic programming/slide window
 # prev2, prev1 → curr
 # slide window forward
