@@ -1,21 +1,14 @@
 class Solution:
-      
-    def twoSum(self, nums, target):
-        mp = {} # Our Memory Bank dict(hash map)
-
+    def twoSums(self, nums, target):
+        mp = {}
         for i, n in enumerate(nums):
-            diff = target - n # What are we looking for?
-
+            diff = target - n
             if diff in mp:
-                # We found the pair!
-                return [mp[diff], i]
-
-            # We haven't found a match yet, so save this number's index
-            mp[n] = i
-
+                return [mp[diff],i]
+            mp[n]= i
 
 sol = Solution() 
-result = sol.twoSums([2, 7, 11, 15], 9) 
+result = sol.twoSums([12, 2,3, 7, 11, 15], 9) 
 print(result) # Output: [0, 1
 
 # hashmap pattern
