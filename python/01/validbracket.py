@@ -5,10 +5,11 @@ class Solution:
             ')' : '(',
             '}' : '{', 
             ']' : '[',
-        }
+        } 
 
         for char in data:
             if char in mapping:
+                # most imp(remove last and remember vlue and matching with map char) )
                 if not stack or stack.pop() != mapping[char]:
                     return False
             else:
@@ -19,7 +20,7 @@ result = Solution()
 print(result.validParen('()'))
 
 
-# 
+# stack pattern
 # for ch in data:
 #     if opening:
 #         stack.append(ch)

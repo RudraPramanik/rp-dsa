@@ -1,5 +1,5 @@
 class Solution:
-    def remove duplicate(self,nums):
+    def duplicate(nums):
         k = 1
 
         for i in range(1, len(s)):
@@ -8,6 +8,11 @@ class Solution:
                 k+=1
 
                 return k
+
+sol = Solution() 
+result = sol.duplicate(2,3,4,5,5) 
+print(result) #
+
 
 # two pointer
 # read pointer → scans(i)
